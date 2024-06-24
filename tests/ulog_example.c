@@ -15,7 +15,7 @@ void my_console_logger(ulog_level_t severity, char *msg)
 {
   printf("console: %s [%s]: %s\n",
          "time", // user defined function
-         ulog_level_name(severity),
+         ULOG_LEVEL_NAME(severity),
          msg);
 }
 
@@ -23,7 +23,7 @@ void my_file_logger(ulog_level_t severity, char *msg)
 {
   printf("file: %s [%s]: %s\n",
          "time", // user defined function
-         ulog_level_name(severity),
+         ULOG_LEVEL_NAME(severity),
          msg);
 }
 
